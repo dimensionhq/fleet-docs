@@ -4,21 +4,20 @@ import Logo from "../assets/logo.svg"
 import Hero from '../components/Hero';
 import Terminal from '../components/Terminal';
 import Code from '../components/Terminal/code';
-import Dimension from '../assets/dimension.svg';
 import Header from "../assets/header.png";
 
 
 const Index: Component = () => {
     return (
-        <div class='w-full flex flex-col gap-[102px]'>
+        <div class='w-full flex flex-col gap-[102px] pb-10'>
             <img class='hidden' src={Header} alt="" />
-            <div class='mx-[123px]'>
+            <div class='mx-2 md:mx-[123px]'>
                 <div class='pt-[49px]'>
                     <img src={Logo} />
                 </div>
                 <Hero />
                 <Terminal />
-                <div id='install' class='w-full h-full flex items-center text-white justify-center flex-col gap-8'>
+                <div id='install' class='w-full h-full flex items-center text-white justify-center flex-col gap-8 md:w-[614px] '>
                     <h1 class='text-5xl font-extrabold '>let’s fleet_</h1>
                     <Code onClick={() => {
                         window.navigator.clipboard.writeText("fleet run")
@@ -42,17 +41,8 @@ const Index: Component = () => {
                     </Code>
 
                 </div>
-            </div >
-            <div style={{
-                "background-image": `url(${Dimension})`,
-                "background-size": "cover",
-                "background-position": "center",
-                width: "100vw",
-                height: "100vh",
-                position: "relative"
-            }} class='w-full text-center h-full'>
             </div>
-        </div >
+        </div>
     );
 };
 

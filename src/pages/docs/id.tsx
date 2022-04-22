@@ -63,9 +63,8 @@ const Id = () => {
     return (
         <div class="flex w-full min-h-screen text-white pb-10">
             <Sidebar />
-            {resolveElement(useLocation().pathname)}
-            <div class="w-[20%] bg-black min-h-fit pt-[61px]">
-                <h1>On this page</h1>
+            <div class="px-5">
+                {resolveElement(useLocation().pathname)}
             </div>
         </div>
     )

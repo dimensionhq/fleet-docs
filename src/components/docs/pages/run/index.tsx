@@ -33,12 +33,20 @@ const Run = () => {
                     </For>
                 </tbody>
             </table>
-            <Link class="mt-9" href="/docs/start/benchmarks">
-                <div class="w-full min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                    <h1>Next: Benchmarks</h1>
-                    <h3>Benchmarks for fleet</h3>
-                </div>
-            </Link>
+            <div class="w-full mt-9 flex gap-2">
+                <Link href="/docs/start/benchmarks" class="w-1/2">
+                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
+                        <h1>Previous: Benchmarks</h1>
+                        <h3>Benchmarks for turbo</h3>
+                    </div>
+                </Link>
+                <Link href="/docs/commands/build" class="w-1/2">
+                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
+                        <h1>Next: Build</h1>
+                        <h3>Build your rust app</h3>
+                    </div>
+                </Link>
+            </div>
         </div >
     )
 }

@@ -35,7 +35,7 @@ const Sidebar = () => {
 
 
     return (
-        <div class="w-[30%] min-h-screen relative">
+        <div class="w-[30%] hidden md:block min-h-screen relative">
             <div class="flex-col h-full gap-12 hidden md:flex max-w-[240px] px-[7px] border-r border-[#5B3F33] absolute w-[240px]">
                 <img src={Logo} class="m-6" alt="" width={'97px'} />
                 <div class="flex flex-col gap-8 p-2 max-w-[240px]">

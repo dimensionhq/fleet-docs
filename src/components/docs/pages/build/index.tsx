@@ -34,10 +34,10 @@ const Build = () => {
                     </For>
                 </tbody>
             </table>
-            <Link class="mt-9" href="/docs/start/benchmarks">
+            <Link class="mt-9" href="/docs/commands/run">
                 <div class="w-full min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                    <h1>Next: Benchmarks</h1>
-                    <h3>Benchmarks for fleet</h3>
+                    <h1>Previous: Run</h1>
+                    <h3>Run your rust app</h3>
                 </div>
             </Link>
         </div >

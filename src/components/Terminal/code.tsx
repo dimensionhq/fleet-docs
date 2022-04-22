@@ -6,7 +6,8 @@ border: 1px solid #5B3F33;
 box-sizing: border-box;
 border-radius: 16px;
 padding: 24px 32px;
-width: 614px;
+
+width: 100%;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 
