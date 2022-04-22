@@ -15,3 +15,15 @@ body {
   min-height: 100vh;
   font-family: "JetBrains Mono", monospace;
 }
+@layer base {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    padding: 12px;
+    border: 1px solid #242120;
+  }
+}

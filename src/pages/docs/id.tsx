@@ -2,7 +2,9 @@ import { Link, useLocation } from "solid-app-router"
 import { For } from "solid-js"
 import Logo from "../../assets/logo.svg"
 import Benchmarks from "../../components/docs/pages/benchmarks"
+import Build from "../../components/docs/pages/build"
 import GettingStarted from "../../components/docs/pages/getting-started"
+import Run from "../../components/docs/pages/run"
 import Sidebar from "../../components/docs/sidebar"
 
 const menu = [
@@ -39,6 +41,10 @@ const resolveElement = (path: string) => {
         return <GettingStarted />
     } else if (path == "/docs/start/benchmarks") {
         return <Benchmarks />
+    } else if (path == "/docs/commands/run") {
+        return <Run />
+    } else if (path == "/docs/commands/build") {
+        return <Build />
     } else {
         return (
             <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">

@@ -62,7 +62,7 @@ const With = (props: IWithoutTerminal) => {
                     on
                     <span class="text-red-500">🦀v1.62.0-nightly</span>
                 </h1>
-                <h1>❯ cargo run</h1>
+                <h1>❯ fleet run</h1>
                 <For each={lines()}>
                     {(line, index) => (
                         <div class="text-sm m-0 p-0" innerHTML={line}></div>

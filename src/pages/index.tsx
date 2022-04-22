@@ -18,7 +18,7 @@ const Index: Component = () => {
                 </div>
                 <Hero />
                 <Terminal />
-                <div class='w-full h-full flex items-center text-white justify-center flex-col gap-8'>
+                <div id='install' class='w-full h-full flex items-center text-white justify-center flex-col gap-8'>
                     <h1 class='text-5xl font-extrabold '>let’s fleet_</h1>
                     <Code onClick={() => {
                         window.navigator.clipboard.writeText("fleet run")
