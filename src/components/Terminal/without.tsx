@@ -19,8 +19,6 @@ const WithoutTerminal = (props: IWithoutTerminal) => {
         let r = Math.floor(Math.random() * 100) + 1;
         let timeout = r > 15 ? 125 : 325;
 
-
-
         if (c_line <= f_lines.length) {
             let t_time = time() + timeout;
             setTime(t_time)
