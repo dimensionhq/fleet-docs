@@ -34,12 +34,20 @@ const Build = () => {
                     </For>
                 </tbody>
             </table>
-            <Link class="mt-9" href="/docs/commands/run">
-                <div class="w-full min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                    <h1>Previous: Run</h1>
-                    <h3>Run your rust app</h3>
-                </div>
-            </Link>
+            <div class="w-full mt-9 flex gap-2">
+                <Link href="/docs/commands/run" class="w-1/2">
+                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
+                        <h1>Previous: Run</h1>
+                        <h3>Run your rust project</h3>
+                    </div>
+                </Link>
+                <Link href="/docs/ci/linux" class="w-1/2">
+                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
+                        <h1>Next: Linux CI/CD</h1>
+                        <h3>Github workflow for CI/CD on linux</h3>
+                    </div>
+                </Link>
+            </div>
         </div >
     )
 }

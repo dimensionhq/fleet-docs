@@ -15,7 +15,7 @@ const Linux = () => {
         </div>
       </div>
       <div class="w-full mt-9 flex gap-2">
-        <Link href="/docs/start/getting-started" class="w-1/2">
+        <Link href="/docs/commands/build" class="w-1/2">
           <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
             <h1>Previous: Get Started</h1>
             <h3>Install turbo</h3>
@@ -23,8 +23,8 @@ const Linux = () => {
         </Link>
         <Link href="/docs/commands/run" class="w-1/2">
           <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-            <h1>Next: Run</h1>
-            <h3>Run your rust app</h3>
+            <h1>Next: Windows CI/CD</h1>
+            <h3>Github workflow for CI/CD on windows</h3>
           </div>
         </Link>
       </div>
