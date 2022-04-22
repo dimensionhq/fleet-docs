@@ -63,7 +63,8 @@ const Id = () => {
     return (
         <div class="flex w-full min-h-screen text-white pb-10">
             <Sidebar />
-            <div class="px-5">
+            <div class="px-5 py-3">
+                <img src={Logo} class="block md:hidden" alt="" />
                 {resolveElement(useLocation().pathname)}
             </div>
         </div>
