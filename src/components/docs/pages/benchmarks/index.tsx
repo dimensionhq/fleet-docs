@@ -5,13 +5,13 @@ import IncrementalBuilds from "../../../../assets/incremental-builds.png"
 const Benchmarks = () => {
     return (
         <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">
-            <h1 class="text-6xl font-extrabold">Benchmarks</h1>
-            <h1 class="text-4xl mt-7">
+            <h1 class="text-4xl md:text-6xl font-extrabold">Benchmarks</h1>
+            <h1 class="text-2xl md:text-4xl mt-7">
                 Clean Builds - WSL (Ubuntu 20.04)
             </h1>
             <h4>Clean builds - When you compile your app for the first time</h4>
             <img class="w-1/2" src={CleanBuilds} alt="" />
-            <h1 class="text-4xl mt-7">
+            <h1 class="text-2xl md:text-4xl mt-7">
                 Incremental - WSL (Ubuntu 20.04)
             </h1>
             <h4>Incremental builds - When you compile your app after your app is already compiled</h4>

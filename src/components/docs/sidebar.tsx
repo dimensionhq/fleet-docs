@@ -2,7 +2,7 @@ import { Link, useLocation } from "solid-app-router"
 import { For } from "solid-js"
 import Logo from "../../assets/logo.svg"
 
-const menu = [
+export const menu = [
     {
         name: "Start Here",
         contents: [
