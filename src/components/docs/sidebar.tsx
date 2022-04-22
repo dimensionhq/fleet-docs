@@ -28,6 +28,19 @@ export const menu = [
                 href: "/docs/commands/build"
             }
         ]
+    },
+    {
+        name: "Github CI/CD",
+        contents: [
+            {
+                name: "Linux",
+                href: "/docs/ci/linux"
+            },
+            {
+                name: "Windows",
+                href: "/docs/ci/windows"
+            }
+        ]
     }
 ]
 const Sidebar = () => {

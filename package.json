@@ -10,8 +10,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/prismjs": "^1.26.0",
     "autoprefixer": "^10.4.4",
+    "classcat": "^5.0.3",
     "postcss": "^8.4.12",
+    "prismjs": "^1.28.0",
     "solid-app-router": "^0.3.2",
     "solid-styled-components": "^0.27.6",
     "solid-table": "^0.0.1",

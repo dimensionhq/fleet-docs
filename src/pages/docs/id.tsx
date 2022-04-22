@@ -4,9 +4,10 @@ import Logo from "../../assets/logo.svg"
 import Benchmarks from "../../components/docs/pages/benchmarks"
 import Build from "../../components/docs/pages/build"
 import GettingStarted from "../../components/docs/pages/getting-started"
+import Linux from "../../components/docs/pages/ci-linux"
 import Run from "../../components/docs/pages/run"
 import Sidebar, { menu } from "../../components/docs/sidebar"
-
+import Windows from "../../components/docs/pages/ci-windows"
 
 
 const resolveElement = (path: string) => {
@@ -18,6 +19,10 @@ const resolveElement = (path: string) => {
         return <Run />
     } else if (path == "/docs/commands/build") {
         return <Build />
+    } else if (path == "/docs/ci/linux") {
+        return <Linux />
+    } else if (path == "/docs/ci/windows") {
+        return <Windows />
     } else {
         return (
             <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">
@@ -65,7 +70,7 @@ const Id = () => {
                 </div>
             </Show>
             <Sidebar />
-            <div class="px-5 py-3">
+            <div class="px-5 py-3 w-full md:w-[60%]">
                 <div class="flex md:hidden gap-2 relative">
                     <button onClick={() => setOpen(true)}>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

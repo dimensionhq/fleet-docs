@@ -1,8 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/prismjs': ^1.26.0
   autoprefixer: ^10.4.4
+  classcat: ^5.0.3
   postcss: ^8.4.12
+  prismjs: ^1.28.0
   solid-app-router: ^0.3.2
   solid-js: ^1.3.13
   solid-styled-components: ^0.27.6
@@ -16,8 +19,11 @@ dependencies:
   solid-js: 1.3.13
 
 devDependencies:
+  '@types/prismjs': 1.26.0
   autoprefixer: 10.4.4_postcss@8.4.12
+  classcat: 5.0.3
   postcss: 8.4.12
+  prismjs: 1.28.0
   solid-app-router: 0.3.2_solid-js@1.3.13
   solid-styled-components: 0.27.6_solid-js@1.3.13
   solid-table: 0.0.1
@@ -379,6 +385,10 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@types/prismjs/1.26.0:
+    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
+    dev: true
+
   /acorn-node/1.8.2:
     resolution: {integrity: sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A==}
     dependencies:
@@ -507,6 +517,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /classcat/5.0.3:
+    resolution: {integrity: sha512-6dK2ke4VEJZOFx2ZfdDAl5OhEL8lvkl6EHF92IfRePfHxQTqir5NlcNVUv+2idjDqCX2NDc8m8YSAI5NI975ZQ==}
     dev: true
 
   /color-convert/1.9.3:
@@ -1062,6 +1076,11 @@ packages:
       nanoid: 3.3.1
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /prismjs/1.28.0:
+    resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
+    engines: {node: '>=6'}
     dev: true
 
   /queue-microtask/1.2.3:
