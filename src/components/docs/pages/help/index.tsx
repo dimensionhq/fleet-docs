@@ -1,7 +1,6 @@
 import { Link } from "solid-app-router"
 import { For } from "solid-js"
-import buildRows from "../../../../utils/build"
-import runRows from "../../../../utils/run"
+import helpRows from "../../../../utils/help"
 
 const Build = () => {
     return (
@@ -24,7 +23,7 @@ const Build = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <For each={buildRows}>
+                    <For each={helpRows}>
                         {(row) => (
                             <tr>
                                 <td>{row.arguments}</td>
@@ -35,6 +34,12 @@ const Build = () => {
                 </tbody>
             </table>
             <div class="w-full mt-9 flex gap-2">
+                <Link href="/docs/start/benchmarks" class="w-1/2">
+                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
+                        <h1>Next: Benchmarks</h1>
+                        <h3>Benchmarks for fleet</h3>
+                    </div>
+                </Link>
                 <Link href="/docs/commands/run" class="w-1/2">
                     <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
                         <h1>Next: Run</h1>
