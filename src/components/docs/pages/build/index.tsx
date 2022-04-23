@@ -7,7 +7,7 @@ const Build = () => {
     return (
         <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">
             <h1 class="text-6xl font-extrabold">Build</h1>
-            <h3 class="text-2xl mt-7">Build a new cargo project with fleet</h3>
+            <h3 class="text-2xl mt-7">To build a cargo project with Fleet:</h3>
             <div class="rounded-xl bg-brown-200 w-full max-h-fit p-5">
                 {">"} fleet build
             </div>

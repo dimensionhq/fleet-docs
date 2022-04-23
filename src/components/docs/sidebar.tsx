@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.svg"
 
 export const menu = [
     {
-        name: "Start Here",
+        name: "Fleet",
         contents: [
             {
                 name: "Get started",
@@ -19,6 +19,10 @@ export const menu = [
     {
         name: "Commands",
         contents: [
+            {
+                name: "Help",
+                href: "/docs/commands/help"
+            },
             {
                 name: "Run",
                 href: "/docs/commands/run"

@@ -1,18 +1,19 @@
 import { Link } from "solid-app-router"
 import { For } from "solid-js"
+import buildRows from "../../../../utils/build"
 import runRows from "../../../../utils/run"
 
-const Run = () => {
+const Build = () => {
     return (
         <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">
-            <h1 class="text-6xl font-extrabold">Run</h1>
-            <h3 class="text-2xl mt-7">To run a cargo project with Fleet:</h3>
+            <h1 class="text-6xl font-extrabold">Help</h1>
+            <h3 class="text-2xl mt-7">To show the help menu for any command:</h3>
             <div class="rounded-xl bg-brown-200 w-full max-h-fit p-5">
-                {">"} fleet run
+                {">"} fleet [command] --help
             </div>
-            <h3 class="text-2xl mt-7">Display help menu</h3>
+            <h3 class="text-2xl mt-7">Display a help menu</h3>
             <div class="rounded-xl bg-brown-200 w-full max-h-fit p-5">
-                {">"} fleet run --help
+                {">"} fleet --help
             </div>
             <h3 class="text-2xl mt-7">Arguments accepted</h3>
             <table>
@@ -23,7 +24,7 @@ const Run = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <For each={runRows}>
+                    <For each={buildRows}>
                         {(row) => (
                             <tr>
                                 <td>{row.arguments}</td>
@@ -34,16 +35,10 @@ const Run = () => {
                 </tbody>
             </table>
             <div class="w-full mt-9 flex gap-2">
-                <Link href="/docs/commands/help" class="w-1/2">
+                <Link href="/docs/commands/run" class="w-1/2">
                     <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                        <h1>Previous: Help</h1>
-                        <h3>The fleet help command</h3>
-                    </div>
-                </Link>
-                <Link href="/docs/commands/build" class="w-1/2">
-                    <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                        <h1>Next: Build</h1>
-                        <h3>Build your rust app</h3>
+                        <h1>Next: Run</h1>
+                        <h3>Run your Rust project</h3>
                     </div>
                 </Link>
             </div>
@@ -51,4 +46,4 @@ const Run = () => {
     )
 }
 
-export default Run
+export default Build

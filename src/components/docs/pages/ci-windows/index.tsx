@@ -6,8 +6,9 @@ import { CodeBlock } from "./highlight"
 const Windows = () => {
   return (
     <div class="col-span-9 min-w-[50%] flex flex-col gap-4 pt-[61px]">
-      <h1 class="text-4xl md:text-6xl font-extrabold">Windows config for github workflows</h1>
-      <div class="mt-9">
+      <h1 class="text-4xl md:text-4xl font-bold">Integrating Fleet with GitHub Windows Runners</h1>
+      We've included a sample configuration for a Windows runner using Fleet for builds as well.
+      <div class="mt-2">
         <div class="codeblock">
           <CodeBlock code={LinuxCode}>
             {/* {LinuxCode} */}

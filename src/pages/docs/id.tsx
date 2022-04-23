@@ -8,6 +8,7 @@ import Linux from "../../components/docs/pages/ci-linux"
 import Run from "../../components/docs/pages/run"
 import Sidebar, { menu } from "../../components/docs/sidebar"
 import Windows from "../../components/docs/pages/ci-windows"
+import Help from "../../components/docs/pages/help"
 
 
 const resolveElement = (path: string) => {
@@ -15,6 +16,8 @@ const resolveElement = (path: string) => {
         return <GettingStarted />
     } else if (path == "/docs/start/benchmarks") {
         return <Benchmarks />
+    }else if (path == "/docs/commands/help")  {
+        return <Help />
     } else if (path == "/docs/commands/run") {
         return <Run />
     } else if (path == "/docs/commands/build") {
