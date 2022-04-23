@@ -11,11 +11,11 @@ const Index: Component = () => {
     return (
         <div class='w-full flex flex-col gap-[102px] pb-10'>
             <div class='mx-4 md:mx-[123px]'>
-                <div class='pt-[49px] w-full flex items-center justify-between'>
+                <div class='pt-[49px] w-full flex items-center justify-between text-xl'>
                     <div class='flex gap-2 items-center text-white relative'>
                         <img src={Logo} />
                         from
-                        <h1 class='absolute select-none pointer-events-none right-4 z-50'>Dimension</h1>
+                        <h1 class='absolute pl-1 font-extrabold select-none  pointer-events-none right-4 z-50'>Dimension</h1>
                         <Link class='box' href="https://dimension.dev">
                             <h1 class='px-4 py-2'>
                                 Dimension
