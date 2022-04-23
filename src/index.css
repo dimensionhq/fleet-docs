@@ -68,3 +68,32 @@ body {
 .codeblock ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.box {
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    #0084ff calc(50% - 100px),
+    #0066ff 50%,
+    #0084ff calc(50% + 100px)
+  );
+  color: black;
+  background-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(200% + 200px);
+  bottom: 0;
+  animation: move 2s linear infinite;
+  background-image: inherit;
+  background-size: cover;
+}
+@keyframes move {
+  to {
+    transform: translateX(calc(50% + 100px));
+  }
+}

@@ -4,17 +4,24 @@ import Logo from "../assets/logo.svg"
 import Hero from '../components/Hero';
 import Terminal from '../components/Terminal';
 import Code from '../components/Terminal/code';
-import Header from "../assets/header.png";
 import { Link } from 'solid-app-router';
 
 
 const Index: Component = () => {
     return (
         <div class='w-full flex flex-col gap-[102px] pb-10'>
-            <img class='hidden' src={Header} alt="" />
             <div class='mx-4 md:mx-[123px]'>
                 <div class='pt-[49px] w-full flex items-center justify-between'>
-                    <img src={Logo} />
+                    <div class='flex gap-2 items-center text-white relative'>
+                        <img src={Logo} />
+                        from
+                        <h1 class='absolute select-none pointer-events-none right-4 z-50'>Dimension</h1>
+                        <Link class='box' href="https://dimension.dev">
+                            <h1 class='px-4 py-2'>
+                                Dimension
+                            </h1>
+                        </Link>
+                    </div>
                     <div class='flex gap-4'>
                         <Link href='https://github.com/dimensionhq/fleet'>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
