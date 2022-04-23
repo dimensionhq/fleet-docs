@@ -26,8 +26,8 @@ const Benchmarks = () => {
                 </Link>
                 <Link href="/docs/commands/run" class="w-1/2">
                     <div class="min-h-fit border p-5 rounded-xl border-red-200 flex flex-col gap-2 hover:border-red-100">
-                        <h1>Next: Run</h1>
-                        <h3>Run your rust app</h3>
+                        <h1>Next: Help</h1>
+                        <h3>Help command in the cli</h3>
                     </div>
                 </Link>
             </div>
