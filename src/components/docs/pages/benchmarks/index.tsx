@@ -14,7 +14,8 @@ const Benchmarks = () => {
             <h1 class="text-2xl md:text-4xl mt-7">
                 Incremental - WSL (Ubuntu 20.04)
             </h1>
-            <h4>Incremental builds - When you compile your app after your app is already compiled</h4>
+
+            <h4 class="mt-5">Incremental compilation takes only the changes of a known set of source files and updates any corresponding output files (in the compiler's target language, often bytecode) that may already exist from previous compilations. </h4>
             <img class="w-1/2" src={IncrementalBuilds} alt="" />
             <div class="w-full mt-9 flex gap-2">
                 <Link href="/docs/start/getting-started" class="w-1/2">
