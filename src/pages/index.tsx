@@ -14,10 +14,10 @@ const Index: Component = () => {
                 <div class='pt-[49px] w-full flex items-center justify-between text-xl'>
                     <div class='flex gap-2 items-center text-white relative'>
                         <img src={Logo} />
-                        from
-                        <h1 class='absolute pl-1 font-extrabold select-none  pointer-events-none right-4 z-50'>Dimension</h1>
-                        <Link class='box' href="https://dimension.dev">
-                            <h1 class='px-4 py-2'>
+                        <span class='invisible md:visible'>from</span>
+                        <h1 class='absolute invisible pl-1 font-extrabold select-none md:visible pointer-events-none right-4 z-50'>Dimension</h1>
+                        <Link class='box invisible md:visible' href="https://dimension.dev">
+                            <h1 class='invisible md:visible px-4 py-2'>
                                 Dimension
                             </h1>
                         </Link>
@@ -37,7 +37,7 @@ const Index: Component = () => {
                 </div>
                 <Hero />
                 <Terminal />
-                <div class='w-full h-full flex items-center justify-center flex-col text-white gap-8 '>
+                <div class='w-full h-full flex items-center justify-center flex-col text-white gap-8'>
                     <div class='md:w-[614px] flex flex-col gap-8 items-center justify-center'>
 
                         <h1 class='text-5xl font-extrabold '>let’s fleet_</h1>
