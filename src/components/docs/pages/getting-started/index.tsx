@@ -9,11 +9,11 @@ const GettingStarted = () => {
       </h1>
       <h3 class="text-2xl mt-7">On MacOS & Linux</h3>
       <div class="rounded-xl bg-brown-200 w-full max-h-fit p-5">
-        curl -L get.fleet.dime.dev | sh
+        curl -L get.fleet.rs | sh
       </div>
       <h3 class="text-2xl mt-7">On Windows</h3>
       <div class="rounded-xl bg-brown-200 w-full max-h-fit p-5">
-        iwr -useb windows.fleet.dime.dev | iex
+        iwr -useb windows.fleet.rs | iex
       </div>
 
       <Link class="mt-9" href="/docs/start/benchmarks">

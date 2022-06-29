@@ -61,12 +61,12 @@ const Index: Component = () => {
             <Code
               onClick={() => {
                 window.navigator.clipboard.writeText(
-                  "curl -L get.fleet.dime.dev | sh"
+                  "curl -L get.fleet.rs | sh"
                 );
               }}
             >
               <div class="flex justify-between">
-                <h1>{">"} curl -L get.fleet.dime.dev | sh</h1>
+                <h1>{">"} curl -L get.fleet.rs | sh</h1>
                 <svg
                   width="24"
                   height="24"
